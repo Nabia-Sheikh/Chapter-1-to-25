@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>JS Array</h1>
+    <!-- Question:1 -->
+    <h3>
+      <span>1.</span> Declare an empty array using JS literal notation to store
+      student names in future.
+    </h3>
+    <button onclick="q1()">Click to see code</button> <br />
+    <br />
+    <p id="Q1"></p>
+
+    <!-- Question:2 -->
+    <h3>
+      <span>2.</span> Declare an empty array using JS literal notation to store
+      student names in future.
+    </h3>
+    <button onclick="q2()">Click to see code</button> <br />
+    <br />
+    <p id="Q2"></p>
+
+    <!-- Question 3 -->
+    <h3><span>3.</span> Declare and initialize a string array.</h3>
+    <button onclick="q3()">Click to see code.</button>
+    <button onclick="p3()" id="btn3">click to see output</button> <br />
+    <br />
+    <p id="Q3"></p>
+    <h3 id="out3"></h3>
+    <p id="P3"></p>
+
+    <!-- Question 4 -->
+    <h3><span>4.</span> Declare and initialize a numbers array.</h3>
+    <button onclick="q4()">Click to see code.</button>
+    <button onclick="p4()" id="btn4">click to see output</button> <br />
+    <br />
+    <p id="Q4"></p>
+    <h3 id="out4"></h3>
+    <p id="P4"></p>
+
+    <!-- Question 5 -->
+    <h3><span>5.</span> Declare and initialize a boolean array.</h3>
+    <button onclick="q5()">Click to see code.</button>
+    <button onclick="p5()" id="btn5">click to see output</button> <br />
+    <br />
+    <p id="Q5"></p>
+    <h3 id="out5"></h3>
+    <p id="P5"></p>
+
+    <!-- Question 6 -->
+    <h3><span>6.</span> Declare and initialize a mixed array.</h3>
+    <button onclick="q6()">Click to see code.</button>
+    <button onclick="p6()" id="btn6">click to see output</button> <br />
+    <br />
+    <p id="Q6"></p>
+    <h3 id="out6"></h3>
+    <p id="P6"></p>
+
+    <!-- Question 7 -->
+    <h3>
+      <span>7. </span> Declare and Initialize an array and store available
+      education qualifications in Pakistan <br />
+      (e.g. SSC, HSC, BCS, BS, BCOM, MS, M. Phil., PhD). <br />
+      Show the listed qualifications in your browser like:
+    </h3>
+    <button onclick="q7()">Click to see code.</button>
+    <button onclick="p7()" id="btn7">click to see output</button> <br />
+    <br />
+    <p id="Q7"></p>
+    <h3 id="out7"></h3>
+    <p id="P7"></p>
+
+    <!-- Question 8 -->
+    <h3>
+      <span>8.</span> Write a program to store 3 student names in an array.Take
+      another array to store score of these three students. <br />
+      Assume that total marks are 500 for each student, display the scores &
+      percentages of students like:
+    </h3>
+    <button onclick="q8()">Click to see code.</button>
+    <button onclick="p8()" id="btn8">click to see output</button> <br />
+    <br />
+    <p id="Q8"></p>
+    <h3 id="out8"></h3>
+    <p id="P8"></p>
+
+    <!-- Question 9 -->
+    <h3>
+      <span>9.</span> Initialize an array with color names. Display the array
+      elements in your browser.
+    </h3>
+    <button onclick="p9()" id="btn9">click to see Color Names</button> <br />
+    <br />
+    <h3 id="q9names"></h3>
+
+    <h3>
+      <span>A:</span> Ask the user what color he/she wants to add to the
+      beginning <br />
+      & add that color to the beginning of the array. <br />
+      Display the updated array in your browser.
+    </h3>
+    <button onclick="p9a()" id="btn9a">click to see Part A</button> <br />
+    <br />
+    <p id="P9a"></p>
+
+    <h3>
+      <span>B:</span> Ask the user what color he/she wants to add to the end
+      <br />
+      & add that color to the end of the array. <br />
+      Display the updated array in your browser.
+    </h3>
+    <button onclick="p9b()" id="btn9b">click to see Part B</button> <br />
+    <br />
+    <p id="partB"></p>
+
+    <h3>
+      <span>C:</span> Add two more color to the beginning of the array. Display
+      the updated array in your browser.
+    </h3>
+    <button onclick="p9c()" id="btn9c">click to see Part C</button> <br />
+    <br />
+    <p id="partC"></p>
+
+    <h3>
+      <span>D:</span> Delete the first color in the array. Display the updated
+      array in your browser.
+    </h3>
+    <button onclick="p9d()" id="btn9d">click to see Part D</button> <br />
+    <br />
+    <p id="partD"></p>
+
+    <h3>
+      <span>E:</span> Delete the last color in the array. Display the updated
+      array in your browser.
+    </h3>
+    <button onclick="p9e()" id="btn9e">click to see Part E</button> <br />
+    <br />
+    <p id="partE"></p>
+
+    <h3>
+      <span>F:</span> Ask the user at which index he/she wants to add a color &
+      color name. <br />
+      Then add the color to desired position/index. . <br />
+      Display the updated array in your browser.
+    </h3>
+    <button onclick="p9f()" id="btn9f">click to see Part F</button> <br />
+    <br />
+    <p id="partF"></p>
+
+    <h3>
+      <span>G:</span> Ask the user at which index he/she wants to delete
+      color(s) <br />
+      & how many colors he/she wants to delete. <br />
+      Then remove the same number of color(s) from user-defined position/index.
+      <br />
+      Display the updated array in your browser.
+    </h3>
+    <button onclick="p9g()" id="btn9g">click to see Part G</button> <br />
+    <br />
+    <p id="partG"></p>
+
+    <!-- Question 10 -->
+    <h3>
+      <span>10.</span> Write a program to store student scores in an array
+      <br />
+      & sort the array in ascending order using Array’s sort method.
+    </h3>
+    <button onclick="q10()">Click here to see <b>Array before Sort</b>.</button>
+    <button onclick="p10()">Click here to see <b>Array After Sort</b></button>
+    <br />
+    <br />
+    <h3 id="score"></h3>
+    <p id="Q10"></p>
+    <h3 id="out10"></h3>
+    <p id="P10"></p>
+
+    <!-- Question 11 -->
+    <h3>
+      <span>11.</span> Write a program to initialize an array with city names.
+      <br />
+      Copy 3 array elements from cities array to selectedCities array
+    </h3>
+    <button onclick="q11()">Click here to see <b>Original Array</b>.</button>
+    <button onclick="p11()">Click here to see <b>Cpoied Array</b></button>
+    <br />
+    <br />
+    <h3 id="Original"></h3>
+    <p id="Q11"></p>
+    <h3 id="out11"></h3>
+    <p id="P11"></p>
+
+    <!-- Question 12 -->
+    <h3>
+      <span>12.</span> Write a program to create a single string from the below
+      mentioned array: <br />
+      var arr = [“This ”, “ is ”, “ my ”, “ cat”];
+    </h3>
+    <button onclick="q12()">Click here to see <b>Array</b>.</button>
+    <button onclick="p12()">Click here to see <b>String</b></button> <br />
+    <br />
+    <h3 id="array"></h3>
+    <p id="Q12"></p>
+    <h3 id="out12"></h3>
+    <p id="P12"></p>
+
+    <!-- Question 13 -->
+    <h3>
+      <span>13.</span> Create a new array. Store values one by one in such a way
+      <br />
+      that you can access the values in the order in which they were stored.
+      <br />
+      (FIFO-First In First Out)
+    </h3>
+    <button onclick="q13()">Click here to see <b>Array</b>.</button>
+    <button onclick="p13()" id="btn13">Click here to see <b>Output</b></button>
+    <br />
+    <br />
+    <h3 id="out13"></h3>
+    <p id="Q13"></p>
+    <p id="P13"></p>
+
+    <!-- Question 14 -->
+    <h3>
+      <span>14.</span> Create a new array. Store values one by one in such a way
+      <br />
+      that you can access the values in reverse order. <br />
+      (Last InFirst Out)
+    </h3>
+    <button onclick="q14()">Click here to see <b>Array</b>.</button>
+    <button onclick="p14()" id="btn14">Click here to see <b>Output</b></button>
+    <br />
+    <br />
+    <h3 id="out14"></h3>
+    <p id="Q14"></p>
+    <p id="P14"></p>
+
+    <!-- Question 15 -->
+    <h3>
+      <span>15.</span> Write a program to store phone manufacturers <br />
+      (Apple, Samsung, Motorola, Nokia, Sony & Haier) in an array. <br />
+      Display the following dropdown/select menu in your browser <br />
+      using document.write() method:
+    </h3>
+    <button onclick="q15()" id="btn15">Click here to see <b>Output</b></button>
+    <br />
+    <br />
+    <br />
+    <br />
+    <select id="dropdown"></select>
+
+    <h1>Tables With Loop</h1>
+    <h3>Hard coded table</h3>
+    <button type="button" onclick="hardTable()" id="tableBtn">
+      Click me to see table
+    </button>
+    <br />
+    <br />
+    <p id="hardTable"></p>
+
+    <h3>user Define table</h3>
+    <button type="button" onclick="userTable()" id="userTableBtn">
+      Click me to see table
+    </button>
+    <br />
+    <br />
+    <p id="userTable"></p>
+
+    <script src="app.js"></script>
+  </body>
+</html>
